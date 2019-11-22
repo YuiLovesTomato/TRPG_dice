@@ -10,7 +10,7 @@ def listen():
     if temp == "exit":
         raise exitCommand
     time = int(temp[0])
-    size = int(temp[2:] + 1)
+    size = int(temp[2:])+1
     if time == 1:
         v1 = rand.randrange(1, size)
         print("%d" % v1)
